@@ -9,6 +9,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">01 - 模板语法</RouterLink>
         <RouterLink to="/about">02 - 响应式基础</RouterLink>
+        <RouterLink to="/count">03 - 计算属性</RouterLink>
+        <RouterLink to="/style">04 - Class 与 Style 绑定</RouterLink>
       </nav>
     </div>
   </header>

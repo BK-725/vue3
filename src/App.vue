@@ -11,6 +11,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">02 - 响应式基础</RouterLink>
         <RouterLink to="/count">03 - 计算属性</RouterLink>
         <RouterLink to="/style">04 - Class 与 Style 绑定</RouterLink>
+        <RouterLink to="/event">07 - 事件处理</RouterLink>
+        <RouterLink to="/enter">08 - 表单输入绑定</RouterLink>
       </nav>
     </div>
   </header>

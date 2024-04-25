@@ -26,6 +26,16 @@ const router = createRouter({
       path: '/style',
       name: 'style',
       component: () => import('../views/StyleView.vue')
+    },
+    {
+      path: '/event',
+      name: 'event',
+      component: () => import('../views/EventView.vue')
+    },
+    {
+      path: '/enter',
+      name: 'enter',
+      component: () => import('../views/EnterView.vue')
     }
   ]
 })

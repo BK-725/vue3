@@ -26,6 +26,16 @@ const router = createRouter({
       path: '/style',
       name: 'style',
       component: () => import('../views/StyleView.vue')
+    },
+    {
+      path: '/condition',
+      name: 'condition',
+      component: () => import('../views/ConditionView.vue')
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import('../views/listView.vue')
     }
   ]
 })

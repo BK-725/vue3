@@ -36,6 +36,16 @@ const router = createRouter({
       path: '/list',
       name: 'list',
       component: () => import('../views/listView.vue')
+    },
+    {
+      path: '/event',
+      name: 'event',
+      component: () => import('../views/EventView.vue')
+    },
+    {
+      path: '/enter',
+      name: 'enter',
+      component: () => import('../views/EnterView.vue')
     }
   ]
 })

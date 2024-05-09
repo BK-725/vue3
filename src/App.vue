@@ -15,6 +15,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/list">06 - 列表渲染</RouterLink>
         <RouterLink to="/event">07 - 事件处理</RouterLink>
         <RouterLink to="/enter">08 - 表单输入绑定</RouterLink>
+        <RouterLink to="/cycle">09 - 生命周期</RouterLink>
+        <RouterLink to="/watch">10 - 侦听器</RouterLink>
+        <RouterLink to="/template">11 - 模板引用</RouterLink>
       </nav>
     </div>
   </header>

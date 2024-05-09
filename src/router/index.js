@@ -46,6 +46,21 @@ const router = createRouter({
       path: '/enter',
       name: 'enter',
       component: () => import('../views/EnterView.vue')
+    },
+    {
+      path: '/cycle',
+      name: 'cycle',
+      component: () => import('../views/CycleView.vue')
+    },
+    {
+      path: '/watch',
+      name: 'watch',
+      component: () => import('../views/WatchView.vue')
+    },
+    {
+      path: '/template',
+      name: 'template',
+      component: () => import('../views/TemplateView.vue')
     }
   ]
 })

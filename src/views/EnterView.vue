@@ -5,6 +5,20 @@
 
   // 复选框
   const checked = ref(false);
+
+  // 多行文本
+  const textMessage = ref('');
+
+  // 复选框
+  const checkedNew = ref(true);
+  // 复选框 —— 多个值
+  const arrayMessage = ref([])
+
+  // 单选按钮
+  const picked = ref(false);
+
+  // 选择器
+  const selected = ref('');
 </script>
 
 <template>
@@ -29,6 +43,87 @@
       v-model="checked"
     />
     <label for="checkbox">{{ checked }}</label>
+
+    <!-- 多行文本 -->
+    <div>message is :</div>
+    <p>{{ textMessage }}</p>
+    <textarea 
+      cols="30" 
+      rows="10"
+      v-model="textMessage"
+    ></textarea>
+
+    <!-- 复选框 -->
+    <div>
+      <input 
+        id="checkboxNew"
+        type="checkbox"
+        v-model="checkedNew"
+      />
+      <label for="checkboxNew">{{ checkedNew }}</label>
+    </div>
+
+    <!-- 复选框 —— 多个复选框 -->
+    <div>Checked names: {{ arrayMessage }}</div>
+    <input 
+      type="checkbox" 
+      id="jack"
+      value="Jack"
+      v-model="arrayMessage"
+    />
+    <label for="jack">Jack</label>
+
+    <input 
+      type="checkbox" 
+      id="john"
+      value="John"
+      v-model="arrayMessage"
+    />
+    <label for="john">John</label>
+
+    <input 
+      type="checkbox" 
+      id="mike"
+      value="Mike"
+      v-model="arrayMessage"
+    />
+    <label for="mike">Mike</label>
+
+    <!-- 单选按钮 -->
+    <div>picked is name: {{ picked }}</div>
+    <input 
+      type="radio"
+      id="one"
+      value="One"
+      v-model="picked"
+    />
+    <label for="one">One</label>
+
+    <input 
+      type="radio"
+      id="two"
+      value="Two"
+      v-model="picked"
+    />
+    <label for="two">Two</label>
+
+    <!-- 选择器 -->
+    <div>Select {{ selected }}</div>
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+
+    <!-- 多选，绑定到一个数组中 -->
+    <div>Select {{ selected }}</div>
+    <select v-model="selected">
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+
   </div>
 </template>
 

@@ -18,7 +18,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/cycle">09 - 生命周期</RouterLink>
         <RouterLink to="/watch">10 - 侦听器</RouterLink>
         <RouterLink to="/template">11 - 模板引用</RouterLink>
-        <RouterLink to="/components">11 - 组件基础</RouterLink>
+        <RouterLink to="/components">12 - 组件基础</RouterLink>
       </nav>
     </div>
   </header>

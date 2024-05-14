@@ -20,6 +20,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/template">11 - 模板引用</RouterLink>
         <RouterLink to="/components">12 - 组件基础</RouterLink>
         <RouterLink to="/register">13 - 注册</RouterLink>
+        <RouterLink to="/props">14 - Props</RouterLink>
+        <RouterLink to="/event_new">15 - 事件</RouterLink>
       </nav>
     </div>
   </header>

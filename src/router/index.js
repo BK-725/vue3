@@ -81,6 +81,16 @@ const router = createRouter({
       path: '/event_new',
       name: 'event_new',
       component: () => import('../views/OnEventView.vue')
+    },
+    {
+      path: '/modal_component',
+      name: 'modal_component',
+      component: () => import('../views/ModalView.vue')
+    },
+    {
+      path: '/attrib',
+      name: 'attrib',
+      component: () => import('../views/AttribView.vue')
     }
   ]
 })

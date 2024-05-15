@@ -15,7 +15,7 @@
         message: 'Fee'
       }
     ]
-  )
+  );
 
 </script>
 

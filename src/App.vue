@@ -22,6 +22,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/register">13 - 注册</RouterLink>
         <RouterLink to="/props">14 - Props</RouterLink>
         <RouterLink to="/event_new">15 - 事件</RouterLink>
+        <RouterLink to="/modal_component">16 - 组件 v-modal</RouterLink>
+        <RouterLink to="/attrib">17 - 组件 Attributes</RouterLink>
       </nav>
     </div>
   </header>

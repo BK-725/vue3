@@ -91,6 +91,11 @@ const router = createRouter({
       path: '/attrib',
       name: 'attrib',
       component: () => import('../views/AttribView.vue')
+    },
+    {
+      path: '/slot',
+      name: 'slot',
+      component: () => import('../views/SlotView.vue')
     }
   ]
 })

@@ -24,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/event_new">15 - 事件</RouterLink>
         <RouterLink to="/modal_component">16 - 组件 v-modal</RouterLink>
         <RouterLink to="/attrib">17 - 组件 Attributes</RouterLink>
+        <RouterLink to="/slot">18 - 插槽 Slots</RouterLink>
       </nav>
     </div>
   </header>

@@ -78,6 +78,9 @@
   <!-- <template #[slotName]></template> -->
 
   <!-- 作用域插槽 -->
+  <SlotComponents v-slot="slotProps">
+    {{ slotProps.text }} {{ slotProps.count }}
+  </SlotComponents>
 
 </template>
 

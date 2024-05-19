@@ -11,14 +11,18 @@
 
   // 理解插槽的另一种方式和下面 js 函数类似：
   // 父元素传入插槽内容
-  FancyButton('Click me!')
+  // FancyButton('Click me!')
 
-  // FancyButton 在自己的模板中渲染插槽内容
-  function FancyButton(slotContent) {
-    return `<button class="fancy-btn">
-        ${slotContent}
-      </button>`
-  }
+  // // FancyButton 在自己的模板中渲染插槽内容
+  // function FancyButton(slotContent) {
+  //   return `<button class="fancy-btn">
+  //       ${slotContent}
+  //     </button>`
+  // }
+
+  const message = ref('nameBack');
+
+  const nameBack = ref('new');
 
 </script>
 
@@ -33,7 +37,7 @@
   <!-- // 渲染作用域 -->
   <!-- // 插槽内容可以访问到父组件的数据作用域，因为插槽内容本身是在父组件模板中定义的 -->
   <span>{{ message }}</span>
-  <FancyButton>{{ message }}</FancyButton>
+  <!-- <FancyButton>{{ message }}</FancyButton> -->
 
   <!-- 具名插槽 -->
   <!-- 默认内容：在外部没有提供任何内容的情况下，可以为插槽指定默认内容 -->
@@ -78,6 +82,18 @@
   <!-- <template #[slotName]></template> -->
 
   <!-- 作用域插槽 -->
+
+  <!-- 具名作用域插槽 -->
+  <SlotComponents>
+    <template #header="headerProps">
+     {{headerProps}}
+    </template>
+  </SlotComponents>
+
+  <!-- 高级列表组件 -->
+
+  <!-- 无渲染组件 -->
+
 
 </template>
 

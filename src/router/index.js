@@ -96,6 +96,26 @@ const router = createRouter({
       path: '/slot',
       name: 'slot',
       component: () => import('../views/SlotView.vue')
+    },
+    {
+      path: '/rely',
+      name: 'rely',
+      component: () => import('../views/RelyView.vue')
+    },
+    {
+      path: '/axios',
+      name: 'axios',
+      component: () => import('../views/AxiosView.vue')
+    },
+    {
+      path: '/combined',
+      name: 'combined',
+      component: () => import('../views/CombinedView.vue')
+    },
+    {
+      path: '/customize',
+      name: 'customize',
+      component: () => import('../views/CustomizeView.vue')
     }
   ]
 })

@@ -25,6 +25,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/modal_component">16 - 组件 v-modal</RouterLink>
         <RouterLink to="/attrib">17 - 组件 Attributes</RouterLink>
         <RouterLink to="/slot">18 - 插槽 Slots</RouterLink>
+        <RouterLink to="/rely">19 - 依赖注入</RouterLink>
+        <RouterLink to="/axios">20 - 异步组件</RouterLink>
+        <RouterLink to="/combined">21 - 组合式函数</RouterLink>
+        <RouterLink to="/customize">22 - 自定义指令</RouterLink>
       </nav>
     </div>
   </header>

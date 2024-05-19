@@ -15,6 +15,14 @@
     <slot></slot>
     456
   </button>
+
+  <!-- 具名作用域插槽 -->
+  <slot 
+    name="header"
+    message="hello" 
+  >
+  </slot>
+  
 </template>
 
 <style scoped>

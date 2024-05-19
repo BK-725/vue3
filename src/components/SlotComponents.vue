@@ -1,6 +1,7 @@
 <script setup>
   import { ref } from 'vue'
 
+
 </script>
 
 <!-- 定义一个组件 -->
@@ -16,6 +17,7 @@
     456
   </button>
 
+<<<<<<< HEAD
   <!-- 具名作用域插槽 -->
   <slot 
     name="header"
@@ -23,6 +25,11 @@
   >
   </slot>
   
+=======
+  <div>
+    <slot :text="greetingMessage" :count="1"></slot>
+  </div>
+>>>>>>> 6feccdd8acac9336c455228e1f9e908fd90e7b0d
 </template>
 
 <style scoped>

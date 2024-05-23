@@ -116,6 +116,16 @@ const router = createRouter({
       path: '/customize',
       name: 'customize',
       component: () => import('../views/CustomizeView.vue')
+    },
+    {
+      path: '/plugin',
+      name: 'plugin',
+      component: () => import('../views/PluginView.vue')
+    },
+    {
+      path: '/transition',
+      name: 'transition',
+      component: () => import('../views/TransitionView.vue')
     }
   ]
 })

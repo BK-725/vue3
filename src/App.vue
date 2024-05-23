@@ -29,6 +29,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/axios">20 - 异步组件</RouterLink>
         <RouterLink to="/combined">21 - 组合式函数</RouterLink>
         <RouterLink to="/customize">22 - 自定义指令</RouterLink>
+        <RouterLink to="/plugin">23 - 插件</RouterLink>
+        <RouterLink to="/transition">24 - Transition</RouterLink>
       </nav>
     </div>
   </header>

@@ -31,6 +31,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/customize">22 - 自定义指令</RouterLink>
         <RouterLink to="/plugin">23 - 插件</RouterLink>
         <RouterLink to="/transition">24 - Transition</RouterLink>
+        <RouterLink to="/group">25 - TransitionGroup</RouterLink>
+        <RouterLink to="/keep">26 - keepAlive</RouterLink>
+        <RouterLink to="/teleport">27 - Teleport</RouterLink>
       </nav>
     </div>
   </header>

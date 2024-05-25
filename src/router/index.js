@@ -126,6 +126,21 @@ const router = createRouter({
       path: '/transition',
       name: 'transition',
       component: () => import('../views/TransitionView.vue')
+    },
+    {
+      path: '/group',
+      name: 'group',
+      component: () => import('../views/TransitionGroupView.vue')
+    },
+    {
+      path: '/keep',
+      name: 'keep',
+      component: () => import('../views/keepAliveView.vue')
+    },
+    {
+      path: '/teleport',
+      name: 'teleport',
+      component: () => import('../views/TeleportView.vue')
     }
   ]
 })

@@ -141,6 +141,16 @@ const router = createRouter({
       path: '/teleport',
       name: 'teleport',
       component: () => import('../views/TeleportView.vue')
+    },
+    {
+      path: '/suspense',
+      name: 'suspense',
+      component: () => import('../views/SuspenseView.vue')
+    },
+    {
+      path: '/single_file',
+      name: 'single_file',
+      component: () => import('../views/SingleFileView.vue')
     }
   ]
 })

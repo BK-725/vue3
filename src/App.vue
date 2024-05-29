@@ -34,6 +34,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/group">25 - TransitionGroup</RouterLink>
         <RouterLink to="/keep">26 - keepAlive</RouterLink>
         <RouterLink to="/teleport">27 - Teleport</RouterLink>
+        <RouterLink to="/suspense">28 - Suspense</RouterLink>
+        <RouterLink to="/single_file">28 - Suspense</RouterLink>
       </nav>
     </div>
   </header>

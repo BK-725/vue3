@@ -151,7 +151,57 @@ const router = createRouter({
       path: '/single_file',
       name: 'single_file',
       component: () => import('../views/SingleFileView.vue')
-    }
+    },
+    {
+      path: '/tool',
+      name: 'tool',
+      component: () => import('../views/ToolView.vue')
+    },
+    {
+      path: '/router',
+      name: 'router',
+      component: () => import('../views/RouterView.vue')
+    },
+    {
+      path: '/aaa',
+      name: 'aaa',
+      component: () => import('../components/AAA.vue')
+    },
+    {
+      path: '/bbb',
+      name: 'bbb',
+      component: () => import('../components/BBB.vue')
+    },
+    {
+      path: '/ccc',
+      name: 'ccc',
+      component: () => import('../components/CCC.vue')
+    },
+    {
+      path: '/status',
+      name: 'status',
+      component: () => import('../views/StatusView.vue')
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../views/TestView.vue')
+    },
+    {
+      path: '/service',
+      name: 'service',
+      component: () => import('../views/ServiceView.vue')
+    },
+    {
+      path: '/deployment',
+      name: 'deployment',
+      component: () => import('../views/DeploymentView.vue')
+    },
+    {
+      path: '/performance',
+      name: 'performance',
+      component: () => import('../views/PerformanceView.vue')
+    },
   ]
 })
 

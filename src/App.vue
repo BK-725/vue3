@@ -35,7 +35,14 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/keep">26 - keepAlive</RouterLink>
         <RouterLink to="/teleport">27 - Teleport</RouterLink>
         <RouterLink to="/suspense">28 - Suspense</RouterLink>
-        <RouterLink to="/single_file">28 - Suspense</RouterLink>
+        <RouterLink to="/single_file">29 - 单文件组件</RouterLink>
+        <RouterLink to="/tool">30 - 工具链</RouterLink>
+        <RouterLink to="/router">31 - 路由</RouterLink>
+        <RouterLink to="/status">32 - 状态管理</RouterLink>
+        <RouterLink to="/test">33 - 测试</RouterLink>
+        <RouterLink to="/service">34 - 服务端渲染(SSR)</RouterLink>
+        <RouterLink to="/deployment">35 - 生产部署</RouterLink>
+        <RouterLink to="/performance">36 - 性能优化</RouterLink>
       </nav>
     </div>
   </header>

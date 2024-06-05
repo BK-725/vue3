@@ -43,6 +43,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/service">34 - 服务端渲染(SSR)</RouterLink>
         <RouterLink to="/deployment">35 - 生产部署</RouterLink>
         <RouterLink to="/performance">36 - 性能优化</RouterLink>
+        <RouterLink to="/accessibility">37 - 无障碍访问</RouterLink>
+        <RouterLink to="/safety">38 - 安全</RouterLink>
       </nav>
     </div>
   </header>

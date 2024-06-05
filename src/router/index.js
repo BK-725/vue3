@@ -202,6 +202,16 @@ const router = createRouter({
       name: 'performance',
       component: () => import('../views/PerformanceView.vue')
     },
+    {
+      path: '/accessibility',
+      name: 'accessibility',
+      component: () => import('../views/AccessibilityView.vue')
+    },
+    {
+      path: '/safety',
+      name: 'safety',
+      component: () => import('../views/SafetyView.vue')
+    },
   ]
 })
 

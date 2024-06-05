@@ -212,6 +212,11 @@ const router = createRouter({
       name: 'safety',
       component: () => import('../views/SafetyView.vue')
     },
+    {
+      path: '/introduce',
+      name: 'introduce',
+      component: () => import('../views/router/IntroduceViews.vue')
+    },
   ]
 })
 

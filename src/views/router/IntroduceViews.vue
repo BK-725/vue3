@@ -6,19 +6,56 @@
     onMounted,
   } from 'vue'
 
+  import { 
+    useRoute,
+    useRouter,
+    createRouter, 
+    createWebHashHistory
+  } from 'vue-router'
+
   import AAA from '../../components/AAA.vue'
   import BBB from '../../components/BBB.vue'
 
   const num = ref(0)
+
+  const router = useRouter()
+  const route = useRoute()
 
   const routes = [
     { path: '/AAA', component: AAA },
     { path: '/BBB', component: BBB }
   ]
 
-  const router = createRouter({
+  const routerNew = createRouter({
     history: createWebHashHistory(),
     routes
+  })
+
+  // 注册路由器插件
+  // const app = createApp(App)
+  // app.use(router)
+  // app.mount('#app')
+
+  // 和大多数 Vue 插件一样，use() 需要在 mount() 之前调用
+  // 1、全局注册 RouterView 和 RouterLink 组件
+  // 2、添加全局 $router 和 $route 属性
+  // 3、启用 useRouter() 和 useRoute() 组合式函数
+  // 4、触发路由器解析初始路由
+
+  // 访问路由器和当前路由
+
+
+  function onLink () {
+    return router.push('/components')
+  }
+
+  const search = computed({
+    get () {
+      return route.query.search ?? ''
+    },
+    set (search) {
+      router.replace({ query: { search } })
+    }
   })
 
   
@@ -39,6 +76,12 @@
   <Strong>Current route path: {{ $route.fullPath }}</Strong>
 
   <div>创建路由实例</div>
+
+  <div>注册路由器插件</div>
+
+  <button @click="onLink()">测试访问</button>
+
+  <button>search</button>
   
 </template>
 

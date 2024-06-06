@@ -217,6 +217,11 @@ const router = createRouter({
       name: 'introduce',
       component: () => import('../views/router/IntroduceViews.vue')
     },
+    {
+      path: '/dynamic',
+      name: 'dynamic',
+      component: () => import('../views/router/DynamicViews.vue')
+    },
   ]
 })
 

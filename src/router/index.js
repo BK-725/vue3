@@ -232,7 +232,36 @@ const router = createRouter({
       path: '/match',
       name: 'match',
       component: () => import('../views/router/MatchViews.vue')
-    }
+    },
+    {
+      path: '/nest',
+      name: 'nest',
+      component: () => import('../views/router/NestViews.vue'),
+      children: [
+        {
+          // 当 /user/:id/profile 匹配成功
+          // UserProfile 将被渲染到 User 的 <router-view> 内部
+          path: '/nest1',
+          component: () => import('../views/router/NestViews1.vue'),
+        },
+        {
+          // 当 /user/:id/posts 匹配成功
+          // UserPosts 将被渲染到 User 的 <router-view> 内部
+          path: '/nest2',
+          component: () => import('../views/router/NestViews2.vue')
+        },
+      ]
+    },
+    {
+      path: '/name',
+      name: 'name',
+      component: () => import('../views/router/NameViews.vue')
+    },
+    {
+      path: '/code',
+      name: 'code',
+      component: () => import('../views/router/CodeViews.vue')
+    },
   ]
 })
 

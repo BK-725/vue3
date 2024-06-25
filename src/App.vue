@@ -47,6 +47,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/safety">38 - 安全</RouterLink>
         <RouterLink to="/introduce">01 - 入门</RouterLink>
         <RouterLink to="/dynamic">02 - 动态路由匹配</RouterLink>
+        <RouterLink to="/match">03 - 路由的匹配语法</RouterLink>
       </nav>
     </div>
   </header>

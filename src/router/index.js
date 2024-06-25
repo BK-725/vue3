@@ -222,6 +222,17 @@ const router = createRouter({
       name: 'dynamic',
       component: () => import('../views/router/DynamicViews.vue')
     },
+    // 动态路由
+    {
+      path: '/user/:username/posts/:pstId',
+      name: 'user',
+      component: () => import('../views/router/DynamicNewViews.vue')
+    },
+    {
+      path: '/match',
+      name: 'match',
+      component: () => import('../views/router/MatchViews.vue')
+    }
   ]
 })
 

@@ -25,6 +25,9 @@
 
   <div>Name</div>
 
+  <!-- 获取路由的 id 参数 -->
+  <div>name {{ $route.params.id }}</div>
+
   <router-link :to="{ name: 'dynamic' }">动态路由</router-link>
 
 

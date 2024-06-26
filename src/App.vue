@@ -51,6 +51,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/nest">04 - 嵌套路由</RouterLink>
         <RouterLink to="/name">05 - 命名路由</RouterLink>
         <RouterLink to="/code">06 - 编程式路由</RouterLink>
+        <RouterLink to="/redirect">07 - 重定向和别名</RouterLink>
+        <RouterLink to="/pass">08 - 路由组件传参</RouterLink>
+        <RouterLink to="/history">09 - 不同的历史记录模式</RouterLink>
       </nav>
     </div>
   </header>

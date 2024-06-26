@@ -253,7 +253,7 @@ const router = createRouter({
       ]
     },
     {
-      path: '/name',
+      path: '/name/:id',
       name: 'name',
       component: () => import('../views/router/NameViews.vue')
     },
@@ -261,6 +261,37 @@ const router = createRouter({
       path: '/code',
       name: 'code',
       component: () => import('../views/router/CodeViews.vue')
+    },
+    {
+      path: '/redirect',
+      name: 'redirect',
+      redirect: '/code', // 重定向
+      component: () => import('../views/router/RedirectViews.vue')
+    },
+    {
+      path: '/pass/:id',
+      name: 'pass',
+      props: true, // 路由传参
+      component: () => import('../views/router/PassViews.vue')
+    },
+    // 对象模式
+    // {
+    //   path: '/pass/:id',
+    //   name: 'pass',
+    //   props: { newsletterPopup: false }, // 路由传参
+    //   component: () => import('../views/router/PassViews.vue')
+    // },
+    // 函数模式
+    // {
+    //   path: '/pass/:id',
+    //   name: 'pass',
+    //   props: route => ({ query: route.query.q }), // 路由传参
+    //   component: () => import('../views/router/PassViews.vue')
+    // },
+    {
+      path: '/history',
+      name: 'history',
+      component: () => import('../views/router/HistoryViews.vue')
     },
   ]
 })

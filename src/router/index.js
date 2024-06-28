@@ -1,4 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { 
+  createRouter, 
+  createWebHistory,
+  createWebHashHistory
+} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -293,7 +297,36 @@ const router = createRouter({
       name: 'history',
       component: () => import('../views/router/HistoryViews.vue')
     },
+    {
+      path: '/guard',
+      name: 'guard',
+      component: () => import('../views/router/advanced/GuardViews.vue')
+    },
   ]
 })
+
+// 路由导航守卫
+router.beforeEach( async (to, form) => {
+
+  // 检查用户是否登录了
+  if (!isLogin) {
+    return { name: 'login' }
+  }
+
+  // ...
+  // 返回 false 以取消导航
+  return false
+})
+
+// 也可以使用 async await 语法
+// router.beforeEach(async (to, from) => {
+//   // canUserAccess() 返回 `true` 或 `false`
+//   const canAccess = await canUserAccess(to)
+//   if (!canAccess) return '/login'
+// })
+
+
+// 可选的第三个参数 next
+
 
 export default router

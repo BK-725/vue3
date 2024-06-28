@@ -54,6 +54,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/redirect">07 - 重定向和别名</RouterLink>
         <RouterLink to="/pass">08 - 路由组件传参</RouterLink>
         <RouterLink to="/history">09 - 不同的历史记录模式</RouterLink>
+        <RouterLink to="/guard">10 - 路由导航守卫</RouterLink>
       </nav>
     </div>
   </header>

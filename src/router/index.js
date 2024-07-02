@@ -302,20 +302,28 @@ const router = createRouter({
       name: 'guard',
       component: () => import('../views/router/advanced/GuardViews.vue')
     },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
+    },
   ]
 })
 
 // 路由导航守卫
-router.beforeEach( async (to, form) => {
+// 如果什么都没有，undefined 或者 返回 true ，则导航是有效的，并调用下一个导航守卫
+router.beforeEach( async (to, form, next) => {
 
+  // 检查用户是否是登录了
+  let isLogin = false
   // 检查用户是否登录了
-  if (!isLogin) {
+  if (!isLogin && to.name !== 'login') {
+    // 将用户重定向到登录页面
     return { name: 'login' }
   }
 
-  // ...
-  // 返回 false 以取消导航
-  return false
+  // 可选的第三个参数 next
+
 })
 
 // 也可以使用 async await 语法
@@ -324,6 +332,26 @@ router.beforeEach( async (to, form) => {
 //   const canAccess = await canUserAccess(to)
 //   if (!canAccess) return '/login'
 // })
+
+// 全局解析守卫
+
+// router.beforeResolve(async to => {
+//   if (to.meta.requiresCamera) {
+//     try {
+//       await askForCameraPermission()
+//     } catch (error) {
+//       if (error instanceof NotAllowedError) {
+//         // ... 处理错误，然后取消导航
+//         return false
+//       } else {
+//         // 意料之外的错误，取消导航并把错误传给全局处理器
+//         throw error
+//       }
+//     }
+//   }
+// })
+
+// 全局后置钩子
 
 
 // 可选的第三个参数 next
